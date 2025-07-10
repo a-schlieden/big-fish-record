@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/big-fish-record/static/css/main.7acaea2f.css",
+    "main.js": "/big-fish-record/static/js/main.07d3183d.js",
+    "index.html": "/big-fish-record/index.html",
+    "main.7acaea2f.css.map": "/big-fish-record/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/big-fish-record/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
