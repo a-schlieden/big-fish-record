@@ -7,7 +7,7 @@ import Records from 'components/Records/Records';
 import style from './home.module.css';
 
 
-const Home = () => {
+const Home = ({ recordsArr }) => {
 
     /*    const [table, setTable] = useState([]);
    
@@ -17,13 +17,13 @@ const Home = () => {
            });
        }, []);
     */
-
+    const recordsArray = recordsArr;
     return (
         <div className={style.homeWrapp}>
 
 
             {/*     <Records tableItems={table} /> */}
-            <Records />
+            <Records tableItems={recordsArray} />
 
         </div>
     );

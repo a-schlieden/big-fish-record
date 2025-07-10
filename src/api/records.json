@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Короп",
+        "loc": "karpfen",
+        "id": 18156,
+        "alex": [
+            {
+                "id": 1,
+                "weight": 5360,
+                "length": 65
+            },
+            {
+                "id": 11,
+                "name": "lorem"
+            }
+        ],
+        "vlad": [
+            {
+                "id": 1,
+                "weight": 12050,
+                "length": 99
+            },
+            {
+                "id": 11,
+                "name": "Lorem ipsum"
+            }
+        ]
+    },
+    {
+        "name": "Щука",
+        "loc": "hecht",
+        "id": 18158,
+        "alex": [
+            {
+                "id": 10,
+                "weight": 1200,
+                "length": 55
+            },
+            {
+                "id": 110,
+                "name": "lorem"
+            }
+        ],
+        "vlad": [
+            {
+                "id": 12,
+                "weight": 0,
+                "length": 0
+            },
+            {
+                "id": 112,
+                "name": "Lorem ipsum"
+            }
+        ]
+    },
+    {
+        "name": "Товстолоб",
+        "loc": "blei",
+        "id": 181545,
+        "alex": [
+            {
+                "id": 104,
+                "weight": 2000,
+                "length": 59
+            },
+            {
+                "id": 1104,
+                "name": "lorem"
+            }
+        ],
+        "vlad": [
+            {
+                "id": 125,
+                "weight": 3600,
+                "length": 65
+            },
+            {
+                "id": 1172,
+                "name": "Lorem ipsum"
+            }
+        ]
+    }
+]
