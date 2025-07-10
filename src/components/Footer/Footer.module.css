@@ -1,0 +1,18 @@
+
+.footerWrap {
+    background: #1b3153;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .footerWrap p{
+    margin: 0;
+  }
+  
+  .impressum{
+    color: #fff;
+  }
