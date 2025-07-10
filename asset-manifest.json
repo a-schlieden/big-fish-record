@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/big-fish-record/static/css/main.e6324ce4.css",
-    "main.js": "/big-fish-record/static/js/main.0943ee0f.js",
+    "main.css": "/big-fish-record/static/css/main.8a07c1c8.css",
+    "main.js": "/big-fish-record/static/js/main.c6444483.js",
     "index.html": "/big-fish-record/index.html",
-    "main.e6324ce4.css.map": "/big-fish-record/static/css/main.e6324ce4.css.map",
-    "main.0943ee0f.js.map": "/big-fish-record/static/js/main.0943ee0f.js.map"
+    "main.8a07c1c8.css.map": "/big-fish-record/static/css/main.8a07c1c8.css.map",
+    "main.c6444483.js.map": "/big-fish-record/static/js/main.c6444483.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6324ce4.css",
-    "static/js/main.0943ee0f.js"
+    "static/css/main.8a07c1c8.css",
+    "static/js/main.c6444483.js"
   ]
 }
