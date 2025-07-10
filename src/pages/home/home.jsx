@@ -1,20 +1,37 @@
 
-/* import FischList from 'components/FischList/FischList'; */
+import { useEffect, useState } from 'react';
+
+import Records from 'components/Records/Records';
+import * as filmsFetch from '../../api/Fetch';
 
 import style from './home.module.css';
 
+
 const Home = () => {
-    /* const Home = ({ tackleArr }) => { */
-    /*    const tackleArray = tackleArr */
+
+    const [films, setFilms] = useState([]);
+    const [table, setTable] = useState([]);
+
+    useEffect(() => {
+        filmsFetch.fetchTrendingMovies().then(result => {
+            setFilms(result.results);
+        });
+    }, []);
+
+    useEffect(() => {
+        filmsFetch.fetchGoogleTable().then(result => {
+            setTable(result);
+        });
+    }, []);
+
+
 
     return (
         <div className={style.homeWrapp}>
-            <h2>HOME</h2>
-            {/*             <FischList sublink={'fishes/'} tackleArr={tackleArray} />
-            <div className={style.homeWeatherWrapp}>
-                <Weather />
-                <WeatherWeek />
-            </div> */}
+
+
+            <Records filmsArray={films} tableItems={table} />
+
         </div>
     );
 };
