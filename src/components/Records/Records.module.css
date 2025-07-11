@@ -1,4 +1,5 @@
 .recordsWrap{
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
 }
