@@ -66,5 +66,22 @@
             "weight": 3500,
             "length": 65
         }
+    },
+    {
+        "name": "Карась",
+        "loc": "kar",
+        "id": 1810545774,
+        "alex": {
+            "name": "alex",
+            "id": 107755,
+            "weight": 1560,
+            "length": 42
+        },
+        "vlad": {
+            "name": "vlad",
+            "id": 1477752,
+            "weight": 800,
+            "length": 25
+        }
     }
 ]
