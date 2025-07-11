@@ -1,12 +1,12 @@
+import OneRecord from 'components/OneRecord/OneRecord';
 
 import style from './Records.module.css';
 
-const Records = ({ recordsArray }) => {
-    const myrecordsArray = recordsArray;
-    console.log("tableItems", myrecordsArray)
+const Records = ({ tableItems }) => {
+    const ourRecordsArray = tableItems;
     return (
         <div className={style.recordsWrap}>
-            <h1>Records</h1>
+            <OneRecord ourAllRecordsArray={ourRecordsArray} />
         </div>
     );
 };

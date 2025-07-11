@@ -6,25 +6,11 @@ import Records from 'components/Records/Records';
 
 import style from './home.module.css';
 
-
 const Home = ({ recordsArr }) => {
-
-    /*    const [table, setTable] = useState([]);
-   
-       useEffect(() => {
-           filmsFetch.fetchGoogleTable().then(result => {
-               setTable(result.values);
-           });
-       }, []);
-    */
     const recordsArray = recordsArr;
     return (
         <div className={style.homeWrapp}>
-
-
-            {/*     <Records tableItems={table} /> */}
             <Records tableItems={recordsArray} />
-
         </div>
     );
 };
