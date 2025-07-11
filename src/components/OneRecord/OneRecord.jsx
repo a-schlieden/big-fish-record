@@ -22,11 +22,11 @@ const OneRecord = ({ ourAllRecordsArray }) => {
                     {/*         <p>{ArrItem.alex.name} {ArrItem.alex.weight}</p>
                     <p>{ArrItem.vlad.name} {ArrItem.vlad.weight}</p> */}
                     {((ArrItem.alex.weight === 0 && ArrItem.vlad.weight === 0)) ?
-                        (<div>No Info</div>) : (ArrItem.alex.weight > ArrItem.vlad.weight) ?
-                            (<div>
+                        (<div style={{ minWidth: '300px' }}>No Info</div>) : (ArrItem.alex.weight > ArrItem.vlad.weight) ?
+                            (<div style={{ minWidth: '300px' }}>
                                 {Functions.consLogging(ArrItem.id, ArrItem.alex, ArrItem.vlad)}
                             </div>)
-                            : (<div>
+                            : (<div style={{ minWidth: '300px' }}>
                                 {Functions.consLogging(ArrItem.id, ArrItem.vlad, ArrItem.alex)}
                             </div>)
                     }

@@ -35,13 +35,11 @@ export function fetchReviewMovie(FilmId) {
 }
 
 export function consLogging(id, first, second) {
-    return <div key={id} >
-        <p><b>{first.name}</b> has </p>
-        <p>{first.weight / 1000} kg</p>
-        <p>{first.length} sm</p>
-        <p><b>{second.name}</b> has</p>
-        <p>{second.weight / 1000} kg</p>
-        <p>{second.length} sm</p>
+    return <div key={id}>
+        <p><b>{first.name}</b>  </p>
+        <p>{first.weight / 1000} kg / {first.length} sm</p>
+        <p><b>{second.name}</b> </p>
+        <p>{second.weight / 1000} kg / {second.length} sm</p>
     </div>;
     /* return console.log("first", first.name, "second", second.name) */
 }
