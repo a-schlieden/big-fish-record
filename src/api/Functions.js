@@ -36,7 +36,7 @@ export function fetchReviewMovie(FilmId) {
 
 export function consLogging(id, first, second) {
     return <div key={id}>
-        <p><b>{first.name}</b>  </p>
+        <p className="test-cl"><b>{first.name}</b></p>
         <p>{first.weight / 1000} kg / {first.length} sm</p>
         <p><b>{second.name}</b> </p>
         <p>{second.weight / 1000} kg / {second.length} sm</p>
