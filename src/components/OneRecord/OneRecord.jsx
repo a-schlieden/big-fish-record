@@ -1,6 +1,8 @@
 import * as Functions from '../../api/Functions';
-
+/* import * as fetch from '../../api/Fetch'; */
 import style from './OneRecord.module.css';
+
+/* import { useEffect, useState } from 'react'; */
 
 const OneRecord = ({ ourAllRecordsArray }) => {
     const ourOneRecordArray = ourAllRecordsArray;
@@ -14,12 +16,23 @@ const OneRecord = ({ ourAllRecordsArray }) => {
         const newArrey = some.map(ArrItem => ArrItem.users).flatMap(user => user.alex.id)
         console.log("newArrey", newArrey) */
 
+
+
+    /*     const [films, setFilms] = useState([]);
+        useEffect(() => {
+            fetch.fetchCSSTable().then(result => {
+                setFilms(result.results);
+            });
+        }, []);
+        console.log("films fromFetch ", films) */
+
+
     return (
         <>
             {ourOneRecordArray.map(ArrItem =>
                 <div key={ArrItem.id} className={style.oneRecordWrap}>
                     <h4 key={ArrItem.id}>{ArrItem.name}</h4>
-                    {/*         <p>{ArrItem.alex.name} {ArrItem.alex.weight}</p>
+                    {/* <p>{ArrItem.alex.name} {ArrItem.alex.weight}</p>
                     <p>{ArrItem.vlad.name} {ArrItem.vlad.weight}</p> */}
                     {((ArrItem.alex.weight === 0 && ArrItem.vlad.weight === 0)) ?
                         (<div style={{ minWidth: '300px' }}>No Info</div>) : (ArrItem.alex.weight > ArrItem.vlad.weight) ?

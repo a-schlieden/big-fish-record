@@ -23,3 +23,22 @@ ul{
   color: blue;
   font-size: 25px;
 }
+.item-body{
+  max-height: 500px;
+  height: 200px;
+  padding-top: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.first{
+  width: 60px;
+  height: 100%;
+  background-color: gold;
+  position: relative;
+  }
+  .second{
+    width: 60px;
+    height: 70%;
+    background-color: silver
+  }
