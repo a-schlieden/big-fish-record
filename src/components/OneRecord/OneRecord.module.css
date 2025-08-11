@@ -1,8 +1,21 @@
 .oneRecordWrap{
     border: 2px solid red;
     max-height: 450px;
-
+    width: 23%;
+    margin: 20px 0 20px 0;
+    padding-bottom: 45px;
 }
 .oneRecordHeaderWrap{
     display: flex;
 }
+.oneRecordHeaderImg{
+    width: 52px;
+    height: 56px;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .oneRecordWrap{
+        width: 99%;
+    }
+
+  }

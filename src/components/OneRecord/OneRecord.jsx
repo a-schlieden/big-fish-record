@@ -1,5 +1,5 @@
 import * as Functions from '../../api/Functions';
-
+/* import vladImg from '../../images/vlad.jpg' */
 import style from './OneRecord.module.css';
 
 const OneRecord = ({ ourAllRecordsArray }) => {
@@ -20,6 +20,7 @@ const OneRecord = ({ ourAllRecordsArray }) => {
                 <div key={ArrItem.id} className={style.oneRecordWrap}>
                     <div className={style.oneRecordHeaderWrap}>
                         {/* <img src={ICONURL + weatherData.weather[0].icon + ".png"} alt="fisch-icon" /> */}
+                        {/* <img className={style.oneRecordHeaderImg} src={vladImg} alt="fisch-icon" /> */}
                         {/* `url(${'../images/' + FischTacklesArrItem + '.jpg'})` */}
                         <h4>{ArrItem.name}</h4>
                     </div>

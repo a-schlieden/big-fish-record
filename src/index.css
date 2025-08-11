@@ -18,31 +18,3 @@ ul{
   list-style: none;
   margin: 0;
 }
-
-.test-cl{
-  color: blue;
-  font-size: 25px;
-}
-
-.item-body{
-  max-height: 500px;
-  height: 200px;
-  padding-top: 60px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.item-first{
-  width: 80px;
-  height: 100%;
-  background-color: gold;
-  position: relative;
-margin-right: 5px;
-  }
-
-.item-second{
-  width: 80px;
-  background-color: silver;
-  margin-left: 5px;
-}

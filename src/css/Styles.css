@@ -1,0 +1,50 @@
+.vladJpg{
+    height: 50px;
+}
+
+.item-body{
+    max-height: 500px;
+    height: 200px;
+    padding-top: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .item-first{
+    width: 80px;
+    height: 100%;
+    background-color: gold;
+    background: linear-gradient(
+        135deg,
+        #fff8dc 0%,    /* м'який відблиск */
+        #ffd700 25%,   /* золотий */
+        #ffb700 50%,   /* насичене золото */
+        #ffd700 75%,   /* золотий */
+        #fff8dc 100%   /* відблиск */
+      );
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   
+    border-radius: 8px;
+    position: relative;
+    margin-right: 5px;
+    }
+  
+  .item-second{
+    width: 80px;
+    background-color: silver;
+    background: linear-gradient(
+        135deg,
+        #f8f8f8 0%,    /* світлий відблиск */
+        #c0c0c0 25%,   /* класичне срібло */
+        #a9a9a9 50%,   /* темніше срібло */
+        #c0c0c0 75%,   /* класичне срібло */
+        #f8f8f8 100%   /* світлий відблиск */
+      );
+
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-left: 5px;
+  }
+
+  
