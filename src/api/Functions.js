@@ -2,9 +2,19 @@
 /* import * as Styles from '../css/Styles'; */
 import '../css/Styles.css';
 import vladImg from '../images/vlad.jpg';
+import alexImg from '../images/alex.jpg';
 
-const SCR_IMG = 'alex'
 
+function fischerFoto(foto) {
+    let fischerImg = " ";
+    if (foto === "vlad") {
+        fischerImg = <img className="fisher-img" src={vladImg} alt="fisch-icon" />
+    }
+    else {
+        fischerImg = <img className="fisher-img" src={alexImg} alt="fisch-icon" />
+    }
+    return fischerImg;
+}
 
 function fischRecordWeight(weight, length) {
     let fischWeightForSecond = " ";
@@ -17,23 +27,23 @@ function fischRecordWeight(weight, length) {
     return fischWeightForSecond;
 }
 
+/*  <img className="vladJpg" src={vladImg} alt="fisch-icon" /> 
+ `url(${'../images/' + FischTacklesArrItem + '.jpg'})` 
+ <span className="item-first-img"><b>{first.name}</b></span> 
+ <p>{first.weight / 1000} kg <br></br> {first.length} sm</p>  */
+
 export function oneRecordFn(id, first, second) {
     return <div className="item" key={id}>
         <div className="item-body">
             <div className="item-first">
-                <img className="vladJpg" src={vladImg} alt="fisch-icon" />
-                {/* `url(${'../images/' + FischTacklesArrItem + '.jpg'})` */}
-                <span className="item-first-img"><b>{first.name}</b></span>
-                {/* <p>{first.weight / 1000} kg <br></br> {first.length} sm</p> */}
+                {fischerFoto(first.name)}
                 {fischRecordWeight(first.weight, first.length)}
             </div>
             <div className="item-second" style={{ height: `${(second.weight / first.weight) * 100}%` }}>
-                <img className="vladJpg" src={`../${SCR_IMG}.jpg`} alt="icon" />
-                <span className="item-second-img">
-                    <b>{second.name}</b>
-                </span>
+                {fischerFoto(second.name)}
                 {fischRecordWeight(second.weight, second.length)}
             </div>
         </div>
     </div>;
 }
+
