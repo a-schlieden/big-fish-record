@@ -27,10 +27,10 @@ const OneRecord = ({ ourAllRecordsArray }) => {
                     {((ArrItem.alex.weight === 0 && ArrItem.vlad.weight === 0)) ?
                         (<div style={{ minWidth: '300px' }}>No Info</div>) : (ArrItem.alex.weight > ArrItem.vlad.weight) ?
                             (<div style={{ minWidth: '300px' }}>
-                                {Functions.consLogging(ArrItem.id, ArrItem.alex, ArrItem.vlad)}
+                                {Functions.oneRecordFn(ArrItem.id, ArrItem.alex, ArrItem.vlad)}
                             </div>)
                             : (<div style={{ minWidth: '300px' }}>
-                                {Functions.consLogging(ArrItem.id, ArrItem.vlad, ArrItem.alex)}
+                                {Functions.oneRecordFn(ArrItem.id, ArrItem.vlad, ArrItem.alex)}
                             </div>)
                     }
                 </div>
