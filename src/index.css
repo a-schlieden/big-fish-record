@@ -23,6 +23,7 @@ ul{
   color: blue;
   font-size: 25px;
 }
+
 .item-body{
   max-height: 500px;
   height: 200px;
@@ -31,14 +32,17 @@ ul{
   align-items: flex-end;
   justify-content: center;
 }
-.first{
-  width: 60px;
+
+.item-first{
+  width: 80px;
   height: 100%;
   background-color: gold;
   position: relative;
+margin-right: 5px;
   }
-  .second{
-    width: 60px;
-    height: 70%;
-    background-color: silver
-  }
+
+.item-second{
+  width: 80px;
+  background-color: silver;
+  margin-left: 5px;
+}

@@ -34,20 +34,31 @@ export function fetchReviewMovie(FilmId) {
     return fetchWithErrorHandling(`${URL}movie/${FilmId}/reviews?api_key=${KEY}&language=en-US`);
 }
 
+function secondWeight(weight, length) {
+    let fischWeightForSecond = " ";
+    if (weight > 0) {
+        fischWeightForSecond = <p>{weight / 1000} kg<br></br>{length} sm</p>
+    }
+    else {
+        fischWeightForSecond = <p> </p>;
+    }
+    return fischWeightForSecond;
+}
+
 export function consLogging(id, first, second) {
     return <div className="item" key={id}>
         <div className="item-body">
-            <div class="item-first">
-                <span class="first-img"></span>
+            <div className="item-first">
+                <span className="item-first-img"><b>{first.name}</b></span>
+                {/* <p>{first.weight / 1000} kg <br></br> {first.length} sm</p> */}
+                {secondWeight(first.weight, first.length)}
             </div>
-            <div class="item-second">
-                <span class="second-img"></span>
+            <div className="item-second" style={{ height: `${(second.weight / first.weight) * 100}%` }}>
+                <span className="item-second-img">
+                    <b>{second.name}</b>
+                </span>
+                {secondWeight(second.weight, second.length)}
             </div>
         </div>
-        <p className="test-cl"><b>{first.name}</b></p>
-        <p>{first.weight / 1000} kg / {first.length} sm</p>
-        <p><b>{second.name}</b> </p>
-        <p>{second.weight / 1000} kg / {second.length} sm</p>
     </div>;
-    /* return console.log("first", first.name, "second", second.name) */
 }

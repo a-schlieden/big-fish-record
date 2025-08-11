@@ -50,17 +50,8 @@ export function fetchReviewMovie(FilmId) {
 /* export function fetchGoogleTable() {
     return googleFetch(`${GURL}/${GTID}/values/Sheet1?key=${APIGKEY}`);
 } */
-/* const CSS_KEY = '/api/v1/open_events.ics';
-const CSS_SUB = 'habemus.app';
-const CSS_URL = 'https://corpssaxonialeipzig.de.';
 
-async function cssFetch(url = '') {
-    const response = await fetch(url);
-    return response.ok
-        ? await response.json()
-        : Promise.reject(new Error('Not found'));
-}
 
-export function fetchCSSTable() {
-    return cssFetch(`${CSS_URL}${CSS_SUB}${CSS_KEY}`);
-}  */
+
+
+

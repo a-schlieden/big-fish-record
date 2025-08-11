@@ -1,20 +1,8 @@
 
 .homeWrapp{
-    background-position: center center;
-    background-size: cover;
     width: 100%;
     min-height: 90vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-}
-.homeWeatherWrapp{
-    width: 50%;
-    background: rgba(20, 70, 10, 0.5);
-}
-
-@media (max-width: 663px) {
-    .homeWeatherWrapp{
-        width: 99%;
-    }
 }
