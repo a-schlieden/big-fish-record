@@ -1,4 +1,3 @@
-/* import * as Functions from '../../api/Functions'; */
 
 import style from './OneRecord.module.css';
 
@@ -17,7 +16,7 @@ const OneRecord = ({ ourAllRecordsArray }) => {
     }
 
     const showOnerecord = (id, first, second) => {
-        return <div className="item" key={id}>
+        return <div className={style.item} key={id}>
             <div className={style.itemBody}>
                 <div className={style.itemFirst}>
                     <img className={style.fisherImg} src={process.env.PUBLIC_URL + '/images/' + first.name + '.jpg'} alt="fisch-icon" />
@@ -49,7 +48,6 @@ const OneRecord = ({ ourAllRecordsArray }) => {
                         (ArrItem.alex.weight > ArrItem.vlad.weight)
                             ?
                             (<div style={{ minWidth: '300px' }}>
-                                {/* {Functions.oneRecordFn(ArrItem.id, ArrItem.alex, ArrItem.vlad)} */}
                                 {showOnerecord(ArrItem.id, ArrItem.alex, ArrItem.vlad)}
                             </div>)
                             :
