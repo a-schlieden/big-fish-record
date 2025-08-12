@@ -19,10 +19,11 @@ const OneRecord = ({ ourAllRecordsArray }) => {
             {ourOneRecordArray.map(ArrItem =>
                 <div key={ArrItem.id} className={style.oneRecordWrap}>
                     <div className={style.oneRecordHeaderWrap}>
-                        {/* <img src={ICONURL + weatherData.weather[0].icon + ".png"} alt="fisch-icon" /> */}
-                        {/* <img className={style.oneRecordHeaderImg} src={vladImg} alt="fisch-icon" /> */}
+                        <img className={style.oneRecordHeaderImg} src={process.env.PUBLIC_URL + '/images/' + ArrItem.vlad.name + '.jpg'} alt="fisch-icon" />
+                        {/*    <img className={style.oneRecordHeaderImg} src="images/vlad.jpg" alt="fisch-icon" /> */}
+                        {/*    <img src={`${process.env.PUBLIC_URL}/images/vlad.jpg`} alt="foto" /> */}
                         {/* `url(${'../images/' + FischTacklesArrItem + '.jpg'})` */}
-                        <span style={{ backgroundImage: `url(${'/images/' + ArrItem.vlad.name + '.jpg'})` }} className={style.oneRecordImge}>12</span>
+                        {/*    <span style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + ArrItem.vlad.name + '.jpg'})` }} className={style.oneRecordImge}>12</span> */}
                         <h4>{ArrItem.name}</h4>
                     </div>
                     {((ArrItem.alex.weight === 0 && ArrItem.vlad.weight === 0)) ?
