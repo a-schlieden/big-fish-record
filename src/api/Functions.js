@@ -38,6 +38,7 @@ export function oneRecordFn(id, first, second) {
             <div className="item-first">
                 {fischerFoto(first.name)}
                 {fischRecordWeight(first.weight, first.length)}
+                <span style={{ backgroundImage: `url(${'../images/' + first.name + '.jpg'})` }} >1</span>
             </div>
             <div className="item-second" style={{ height: `${(second.weight / first.weight) * 100}%` }}>
                 {fischerFoto(second.name)}

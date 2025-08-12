@@ -9,7 +9,7 @@ import style from './home.module.css';
 const Home = ({ recordsArr }) => {
     const recordsArray = recordsArr;
     return (
-        <div className={style.homeWrapp}>
+        <div className={style.homeWrapp} >
             <Records tableItems={recordsArray} />
         </div>
     );

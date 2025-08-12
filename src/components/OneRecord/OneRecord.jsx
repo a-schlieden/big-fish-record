@@ -22,6 +22,7 @@ const OneRecord = ({ ourAllRecordsArray }) => {
                         {/* <img src={ICONURL + weatherData.weather[0].icon + ".png"} alt="fisch-icon" /> */}
                         {/* <img className={style.oneRecordHeaderImg} src={vladImg} alt="fisch-icon" /> */}
                         {/* `url(${'../images/' + FischTacklesArrItem + '.jpg'})` */}
+                        <span style={{ backgroundImage: `url(${'/images/' + ArrItem.vlad.name + '.jpg'})` }} className={style.oneRecordImge}>12</span>
                         <h4>{ArrItem.name}</h4>
                     </div>
                     {((ArrItem.alex.weight === 0 && ArrItem.vlad.weight === 0)) ?

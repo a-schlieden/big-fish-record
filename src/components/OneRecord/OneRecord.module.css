@@ -13,6 +13,10 @@
     height: 56px;
     border-radius: 50%;
 }
+.oneRecordImge{
+width: 50px;
+height: 50px;
+}
 @media (max-width: 768px) {
     .oneRecordWrap{
         width: 99%;
