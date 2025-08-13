@@ -7,7 +7,7 @@ const OneRecord = ({ ourAllRecordsArray }) => {
     const fischRercordWeight = (weight, length) => {
         let fischWeightForPerson = " ";
         if (weight > 0) {
-            fischWeightForPerson = <p>{weight / 1000} kg<br></br>{length} sm</p>
+            fischWeightForPerson = <p className={style.itemNumer}>{weight / 1000} kg<br></br>{length} sm</p>
         }
         else {
             fischWeightForPerson = <p> </p>;
@@ -36,13 +36,15 @@ const OneRecord = ({ ourAllRecordsArray }) => {
             {ourOneRecordArray.map(ArrItem =>
                 <div key={ArrItem.id} className={style.oneRecordWrap}>
                     <div className={style.oneRecordHeaderWrap}>
-                        {/*  <img className={style.oneRecordHeaderImg} src={process.env.PUBLIC_URL + '/images/' + ArrItem.vlad.name + '.jpg'} alt="fisch-icon" /> */}
+                        <img className={style.oneRecordHeaderImg} src={process.env.PUBLIC_URL + '/images/perch.png'} alt="fisch-icon" />
                         {/* {funkRecord(ArrItem.vlad.name)} */}
-                        <h4>{ArrItem.name}</h4>
+                        <div className={style.oneRecordHeaderTextWrap}>
+                            <h3>{ArrItem.fish_name_ua}</h3>
+                        </div>
                     </div>
                     {((ArrItem.alex.weight === 0 && ArrItem.vlad.weight === 0)) ?
-                        (<div style={{ minWidth: '300px' }}>
-                            No Info
+                        (<div className={style.oneRecordNoInfoWrap}>
+                            <p>No Info</p>
                         </div>)
                         :
                         (ArrItem.alex.weight > ArrItem.vlad.weight)

@@ -1,7 +1,7 @@
 const KEY = '0e67fb79d752f59394a3aa358d9abf8d';
 export const URL = 'https://api.themoviedb.org/3/';
 export const IMG_URL = 'https://image.tmdb.org/t/p/w500';
-
+const FISCH_URL = 'https://689b3be9e727e9657f644977.mockapi.io/data/'
 
 /* const GURL = 'https://sheets.googleapis.com/v4/spreadsheets'; */
 /* const GTID = '1MkRvOyanHhb5KT3MkkuUQwh3z7fy4-UB22240FMbglM';
@@ -40,16 +40,16 @@ export function fetchReviewMovie(FilmId) {
 }
 
 
-/* async function googleFetch(url = '') {
+async function googleFetch(url = '') {
     const response = await fetch(url);
     return response.ok
         ? await response.json()
         : Promise.reject(new Error('Not found'));
-} */
-/* %21A1%3AC4 */
-/* export function fetchGoogleTable() {
-    return googleFetch(`${GURL}/${GTID}/values/Sheet1?key=${APIGKEY}`);
-} */
+}
+
+export function fetchMOCKAPI() {
+    return googleFetch(`${FISCH_URL}`);
+}
 
 
 

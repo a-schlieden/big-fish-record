@@ -1,75 +1,92 @@
 .oneRecordWrap{
-    border: 2px solid red;
-    max-height: 450px;
-    width: 23%;
-    margin: 20px 0 20px 0;
-    padding-bottom: 45px;
+  /* border: 2px solid red; */
+  box-shadow: 6px 6px 0px -5px #464e52, -5px -5px 0px -4px #464E52;
+  max-height: 500px;
+  width: 23%;
+  margin: 20px 0 20px 0;
+  padding-bottom: 40px;
 }
+
 .oneRecordHeaderWrap{
-    display: flex;
+  display: flex;
+  justify-content: space-between;
 }
+
 .oneRecordHeaderImg{
-    width: 52px;
-    height: 56px;
-    border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #fff;
 }
+.oneRecordHeaderTextWrap{
+  flex: 1;
+  text-align: center;
+}
+.oneRecordHeaderTextWrap h3{
+  text-transform: uppercase;
+}
+
 .itemBody{
-    max-height: 500px;
-    height: 200px;
-    padding-top: 60px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  max-height: 500px;
+  height: 220px;
+  padding-top: 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
+
 .itemFirst{
-    color: #333;
-    width: 80px;
-    height: 100%;
-    background-color: gold;
-    background: linear-gradient(
-        135deg,
-        #fff8dc 0%,    /* м'який відблиск */
-        #ffd700 25%,   /* золотий */
-        #ffb700 50%,   /* насичене золото */
-        #ffd700 75%,   /* золотий */
-        #fff8dc 100%   /* відблиск */
-      );
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 8px;
-    position: relative;
-    margin-right: 5px;
-    }
+  color: #333;
+  width: 90px;
+  height: 100%;
+  background-color: gold;
+  background: linear-gradient( 135deg,#fff8dc 0%,    #ffd700 25%,   #ffb700 50%,  #ffd700 75%,   #fff8dc 100%   );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  position: relative;
+  margin-right: 10px;
+}
   
-  .itemSecond{
-    color: #222;
-    width: 80px;
-    background-color: silver;
-    background: linear-gradient(
-        135deg,
-        #f8f8f8 0%,    /* світлий відблиск */
-        #c0c0c0 25%,   /* класичне срібло */
-        #a9a9a9 50%,   /* темніше срібло */
-        #c0c0c0 75%,   /* класичне срібло */
-        #f8f8f8 100%   /* світлий відблиск */
-      );
-
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin-left: 5px;
-    position: relative;
-  }
-
-  .fisherImg{
-    height: 56px;
-    width: 52px;
-    border-radius: 50%;
-    position: absolute;
-    top: -57px;
+.itemSecond{
+  color: #222;
+  color: #525252;
+  width: 90px;
+  background-color: silver;
+  background: linear-gradient( 135deg,#f8f8f8 0%,  #c0c0c0 25%, #a9a9a9 50%, #c0c0c0 75%, #f8f8f8 100%   );
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  position: relative;
 }
 
-.oneRecordImge{
-width: 50px;
-height: 50px;
+.itemNumer{
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.fisherImg{
+  height: 56px;
+  width: 52px;
+  border-radius: 50%;
+  position: absolute;
+  top: -57px;
+  left: calc(50% - 26px);
+}
+
+.oneRecordNoInfoWrap{
+  min-width: 300px;
+  height: 90%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.oneRecordNoInfoWrap p{
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

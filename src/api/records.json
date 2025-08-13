@@ -1,8 +1,98 @@
 [
     {
-        "name": "Короп",
-        "loc": "karpfen",
-        "id": 18156,
+        "fish_name_en": "aal",
+        "fish_name_de": "aal",
+        "fish_name_ua": "Вугор",
+        "alex": {
+            "name": "alex",
+            "id": 10775577,
+            "weight": 460,
+            "length": 50
+        },
+        "vlad": {
+            "name": "vlad",
+            "id": 147775257,
+            "weight": 0,
+            "length": 0
+        },
+        "id": 181054577455
+    },
+    {
+        "fish_name_en": "aland",
+        "fish_name_de": "aland",
+        "fish_name_ua": "В'язь",
+        "alex": {
+            "name": "alex",
+            "id": 107755997,
+            "weight": 0,
+            "length": 0
+        },
+        "vlad": {
+            "name": "vlad",
+            "id": 14777525997,
+            "weight": 0,
+            "length": 0
+        },
+        "id": 181054577455
+    },
+    {
+        "fish_name_en": "graskarpfen",
+        "fish_name_de": "graskarpfen",
+        "fish_name_ua": "Амур",
+        "alex": {
+            "name": "alex",
+            "id": 107755997,
+            "weight": 3700,
+            "length": 64
+        },
+        "vlad": {
+            "name": "vlad",
+            "id": 14777525997,
+            "weight": 0,
+            "length": 0
+        },
+        "id": 181054577455
+    },
+    {
+        "fish_name_en": "barbe",
+        "fish_name_de": "barbe",
+        "fish_name_ua": "Вусач",
+        "alex": {
+            "name": "alex",
+            "id": 107755997,
+            "weight": 0,
+            "length": 0
+        },
+        "vlad": {
+            "name": "vlad",
+            "id": 14777525997,
+            "weight": 0,
+            "length": 0
+        },
+        "id": 181054577455
+    },
+    {
+        "fish_name_en": "barsch",
+        "fish_name_de": "barsch",
+        "fish_name_ua": "Окунь",
+        "alex": {
+            "name": "alex",
+            "id": 10775599766,
+            "weight": 500,
+            "length": 33
+        },
+        "vlad": {
+            "name": "vlad",
+            "id": 147775255997,
+            "weight": 0,
+            "length": 0
+        },
+        "id": 1810545774552
+    },
+    {
+        "fish_name_en": "karpfen",
+        "fish_name_de": "karpfen",
+        "fish_name_ua": "Короп",
         "alex": {
             "name": "alex",
             "id": 1,
@@ -14,12 +104,13 @@
             "id": 18,
             "weight": 12050,
             "length": 89
-        }
+        },
+        "id": 18156
     },
     {
-        "name": "Щука",
-        "loc": "hecht",
-        "id": 18158,
+        "fish_name_en": "hecht",
+        "fish_name_de": "hecht",
+        "fish_name_ua": "Щука",
         "alex": {
             "name": "alex",
             "id": 10,
@@ -31,12 +122,13 @@
             "id": 12,
             "weight": 0,
             "length": 0
-        }
+        },
+        "id": 18158
     },
     {
-        "name": "Судак",
-        "loc": "zander",
-        "id": 1815454,
+        "fish_name_en": "zander",
+        "fish_name_de": "zander",
+        "fish_name_ua": "Судак",
         "alex": {
             "name": "alex",
             "id": 10,
@@ -48,12 +140,13 @@
             "id": 12,
             "weight": 0,
             "length": 0
-        }
+        },
+        "id": 1815454
     },
     {
-        "name": "Лящ",
-        "loc": "lei",
-        "id": 18105454,
+        "fish_name_en": "blei",
+        "fish_name_de": "blei",
+        "fish_name_ua": "Лящ",
         "alex": {
             "name": "alex",
             "id": 1055,
@@ -65,12 +158,13 @@
             "id": 1452,
             "weight": 3500,
             "length": 65
-        }
+        },
+        "id": 18105454
     },
     {
-        "name": "Карась",
-        "loc": "kar",
-        "id": 1810545774,
+        "fish_name_en": "karausche",
+        "fish_name_de": "karausche",
+        "fish_name_ua": "Карась",
         "alex": {
             "name": "alex",
             "id": 107755,
@@ -82,6 +176,7 @@
             "id": 1477752,
             "weight": 800,
             "length": 25
-        }
+        },
+        "id": 1810545774
     }
 ]
