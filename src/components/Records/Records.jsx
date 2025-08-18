@@ -1,28 +1,23 @@
+
 import OneRecord from 'components/OneRecord/OneRecord';
-
 import style from './Records.module.css';
-
-/* import { useEffect, useState } from 'react';
-
-import * as filmsFetch from '../../api/Fetch'; */
+import { useEffect, useState } from 'react';
+import { fetchRecords } from '../../api/Fetch';
 
 
-const Records = ({ tableItems }) => {
-    const ourRecordsArray = tableItems;
+const Records = () => {
 
-    /*     const [films2, setFilms2] = useState([]);
-    
-        useEffect(() => {
-            filmsFetch.fetchMOCKAPI().then(result => {
-                setFilms2(result);
-            });
-        }, []); */
-    /* console.log("films2", films2) */
+    const [records, setRecords] = useState([]);
 
+    useEffect(() => {
+        fetchRecords().then(result => {
+            setRecords(result);
+        });
+    }, []);
 
     return (
         <div className={style.recordsWrap}>
-            <OneRecord ourAllRecordsArray={ourRecordsArray} />
+            <OneRecord fetchesRecords={records} />
         </div>
     );
 };

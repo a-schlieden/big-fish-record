@@ -1,8 +1,7 @@
 
 import style from './OneRecord.module.css';
 
-const OneRecord = ({ ourAllRecordsArray }) => {
-    const ourOneRecordArray = ourAllRecordsArray;
+const OneRecord = ({ fetchesRecords }) => {
 
     const fischRercordWeight = (weight, length) => {
         let fischWeightForPerson = " ";
@@ -33,7 +32,7 @@ const OneRecord = ({ ourAllRecordsArray }) => {
 
     return (
         <>
-            {ourOneRecordArray.map(ArrItem =>
+            {fetchesRecords.map(ArrItem =>
                 <div key={ArrItem.id} className={style.oneRecordWrap}>
                     <div className={style.oneRecordHeaderWrap}>
                         <img className={style.oneRecordHeaderImg} src={process.env.PUBLIC_URL + '/images/perch.png'} alt="fisch-icon" />
