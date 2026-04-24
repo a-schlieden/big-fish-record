@@ -2,7 +2,7 @@
   /* border: 2px solid red; */
   box-shadow: 6px 6px 0px -5px #464e52, -5px -5px 0px -4px #464E52;
   max-height: 500px;
-  width: 23%;
+  width: 24%;
   margin: 20px 5px 20px 5px;
   padding-bottom: 40px;
 }
@@ -89,9 +89,14 @@
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    .oneRecordWrap{
-        width: 99%;
-    }
-
+@media (max-width: 1200px) {
+  .oneRecordWrap{
+    width: 41%;
   }
+}
+
+@media (max-width: 768px) {
+  .oneRecordWrap{
+    width: 99%;
+  }
+}
